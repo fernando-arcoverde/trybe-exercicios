@@ -12,3 +12,7 @@ git push -u origin main
 # Segunda alteração!
 
 Criado arquivo HTML para adicionar ao GitHub.
+
+# Terceira Alteração!
+
+Criação das pastas principais dos exercícios do curso.
