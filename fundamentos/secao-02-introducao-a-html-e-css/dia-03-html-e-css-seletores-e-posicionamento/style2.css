@@ -1,0 +1,37 @@
+/* Mário pulando no Gomba. */
+.super-mario {
+    width: 200px;
+    position: absolute;
+    left: 92px;
+    top: 100px;
+  }
+  
+  .goomba {
+    width: 100px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+  }
+  
+  /* Fala do Bowser. */
+  .baloon {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+  }
+  
+  /* Frase dentro do balão */
+  .speach {
+    font-size: 25px;
+    position: absolute;
+    top: 290px;
+    left: 420px;
+    z-index: 2;
+  }
+  
+  .bowser {
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+  }

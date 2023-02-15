@@ -1,0 +1,16 @@
+h1, p {
+    text-align: center;
+}
+
+ul:hover, ol:hover {
+    background-color: brown;
+}
+
+li:active {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+}
