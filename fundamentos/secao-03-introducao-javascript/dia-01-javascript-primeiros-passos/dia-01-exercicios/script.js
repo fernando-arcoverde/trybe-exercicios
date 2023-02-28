@@ -34,3 +34,17 @@ let perimeter = 5 + 5 + 8 + 5;
 
 console.log(area);
 console.log(perimeter);
+
+// Exercício 03
+
+let nota = 70;
+nota = 100;
+nota = 45;
+
+if (nota >= 80) {
+    console.log("Parabéns, Você faz parte do grupo de pessoas aprovadas!");
+} else if (nota < 80 && nota >= 60) {
+    console.log("Você está na lista de espera.");
+} else {
+    console.log("Infelizmente, você reprovou.");
+}
