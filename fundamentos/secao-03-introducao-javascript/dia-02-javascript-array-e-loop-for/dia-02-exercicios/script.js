@@ -23,12 +23,12 @@ console.log(tasksList);
 
 // ['Escovar os dentes', 'Tomar café', 'Reunião', 'Brincar com o cachorro', 'Fazer exercícios da Trybe']
 
-tasksList.pop();
+tasksList.pop(); // remove último item
 console.log(tasksList);
 
 // ['Escovar os dentes', 'Tomar café', 'Reunião', 'Brincar com o cachorro']
 
-tasksList.shift();
+tasksList.shift(); // remove primeiro item
 console.log(tasksList);
 
 // ['Tomar café', 'Reunião', 'Brincar com o cachorro']
