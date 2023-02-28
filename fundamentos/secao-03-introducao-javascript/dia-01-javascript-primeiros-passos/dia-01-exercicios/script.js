@@ -48,3 +48,35 @@ if (nota >= 80) {
 } else {
     console.log("Infelizmente, você reprovou.");
 }
+
+// Utilizando Operador && - AND
+
+let comida = 'pão na chapa';
+let bebida = 'café';
+
+bebida = 'Suco de Laranja';
+
+if (bebida === 'café' && comida === 'pão na chapa') {
+    console.log('Muito obrigado pela refeção :)');
+} else {
+    console.log('Acho que houve um engano com o meu pedido.');
+}
+
+// Exercício 04
+
+let currentHour = 17;
+let messagge;
+
+if (currentHour === 22) {
+    messagge = "Não deveríamos comer nada, é hora de dormir";
+} else if (currentHour >= 18 && currentHour < 22) {
+    messagge = 'Rango da noite, vamos jantar.';
+} else if (currentHour >= 14 && currentHour < 18) {
+    messagge = 'Vamos fazer um bolo pro café da tarde?';
+} else if (currentHour >= 11 && currentHour < 14) {
+    messagge = 'Hora do almoço.';
+} else if (currentHour >= 4 && currentHour < 11) {
+    messagge = 'Hmmm, cheiro de café recém-passado';
+}
+
+console.log(messagge);
