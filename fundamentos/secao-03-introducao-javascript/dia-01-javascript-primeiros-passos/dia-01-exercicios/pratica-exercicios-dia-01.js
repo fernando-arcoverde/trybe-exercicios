@@ -1,6 +1,6 @@
-let a = 70;
-let b = 43;
-let c = 32
+// let a = 70;
+// let b = 43;
+// let c = 32
 
 // console.log(a + b);
 // console.log(a - b);
@@ -14,10 +14,34 @@ let c = 32
 //     console.log(b + ' maior ' + a);
 // }
 
-if (a > b && a > c) {
-    console.log(a + ' é maior que ' + b + ' e ' + c + '.');
-} else if (b > a && b > c) {
-    console.log(b + ' é maior que ' + a + ' e ' + c + '.');
+// if (a > b && a > c) {
+//     console.log(a + ' é maior que ' + b + ' e ' + c + '.');
+// } else if (b > a && b > c) {
+//     console.log(b + ' é maior que ' + a + ' e ' + c + '.');
+// } else {
+//     console.log(c + ' é maior que ' + a + ' e ' + b + '.');
+// }
+
+// let valor = 9;
+// if (valor > 0) {
+//   console.log('positivo');
+// } else if (valor < 0) {
+//   console.log('negativo');
+// } else {
+//   console.log('zero');
+// }
+
+let angulaA = 30;
+let anguloB = 120;
+let anguloC = 30;
+let somaAngulos = angulaA + anguloB + anguloC;
+
+if(angulaA > 0 && anguloB > 0 && anguloC > 0) {
+    if(somaAngulos === 180) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 } else {
-    console.log(c + ' é maior que ' + a + ' e ' + b + '.');
+    console.log('Ângulo Inválido!');
 }
