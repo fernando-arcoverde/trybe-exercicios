@@ -93,3 +93,17 @@ if (nota < 0 || nota > 100) {
 } else {
     console.log('F');
 }
+
+// ====================================
+
+let num1 = 5;
+let num2 = 16;
+let num3 = 9;
+
+let numPar = false;
+
+if ((num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0)) {
+    numPar = true;
+};
+
+console.log(numPar);
