@@ -48,28 +48,48 @@
 
 // ====================================
 
-let pecaXadrez = 'rei';
+// let pecaXadrez = 'rei';
 
-switch (pecaXadrez) {
-    case 'rei':
-        console.log(pecaXadrez + ': Uma casa apenas para qualquer direção.');
-        break;
-    case 'rainha':
-        console.log(pecaXadrez + ': Se mova em qualquer direção quantas casas quiser.');
-        break;
-    case 'bispo':
-        console.log(pecaXadrez + ': Movimentos diagonais.');
-        break;
-    case 'cavalo':
-        console.log(pecaXadrez + ': Movimentos em "L" e pode pular sobre outras peças.');
-        break;
-    case 'torre':
-        console.log(pecaXadrez + ': Movimentos horizontais e verticais.');
-        break;
-    case 'peão':
-        console.log(pecaXadrez + ': No primeiro movimento pode movimentar duas casas para frente, após o primeiro movimento, apenas uma casa.');
-        break;
+// switch (pecaXadrez.toLowerCase()) {
+//     case 'rei':
+//         console.log(pecaXadrez + ': Uma casa apenas para qualquer direção.');
+//         break;
+//     case 'rainha':
+//         console.log(pecaXadrez + ': Se mova em qualquer direção quantas casas quiser.');
+//         break;
+//     case 'bispo':
+//         console.log(pecaXadrez + ': Movimentos diagonais.');
+//         break;
+//     case 'cavalo':
+//         console.log(pecaXadrez + ': Movimentos em "L" e pode pular sobre outras peças.');
+//         break;
+//     case 'torre':
+//         console.log(pecaXadrez + ': Movimentos horizontais e verticais.');
+//         break;
+//     case 'peão':
+//         console.log(pecaXadrez + ': No primeiro movimento pode movimentar duas casas para frente, após o primeiro movimento, apenas uma casa.');
+//         break;
 
-    default:
-        console.log('Peça não encontrada.');
+//     default:
+//         console.log('Peça não encontrada.');
+// }
+
+// ==================================
+
+let nota = 92; // 0 a 100
+
+if (nota < 0 || nota > 100) {
+    console.log('ERROR! Nota inválida. Insira valores de 0 à 100.');
+} else if (nota >= 90) {
+    console.log('A');
+} else if (nota >= 80) {
+    console.log('B');
+} else if (nota >= 70) {
+    console.log('C');
+} else if (nota >= 60) {
+    console.log('D');
+} else if (nota >= 50) {
+    console.log('E');
+} else {
+    console.log('F');
 }
