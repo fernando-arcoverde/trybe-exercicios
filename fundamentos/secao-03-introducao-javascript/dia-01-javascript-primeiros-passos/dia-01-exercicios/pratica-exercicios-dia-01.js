@@ -76,34 +76,85 @@
 
 // ==================================
 
-let nota = 92; // 0 a 100
+// let nota = 92; // 0 a 100
 
-if (nota < 0 || nota > 100) {
-    console.log('ERROR! Nota inválida. Insira valores de 0 à 100.');
-} else if (nota >= 90) {
-    console.log('A');
-} else if (nota >= 80) {
-    console.log('B');
-} else if (nota >= 70) {
-    console.log('C');
-} else if (nota >= 60) {
-    console.log('D');
-} else if (nota >= 50) {
-    console.log('E');
-} else {
-    console.log('F');
-}
+// if (nota < 0 || nota > 100) {
+//     console.log('ERROR! Nota inválida. Insira valores de 0 à 100.');
+// } else if (nota >= 90) {
+//     console.log('A');
+// } else if (nota >= 80) {
+//     console.log('B');
+// } else if (nota >= 70) {
+//     console.log('C');
+// } else if (nota >= 60) {
+//     console.log('D');
+// } else if (nota >= 50) {
+//     console.log('E');
+// } else {
+//     console.log('F');
+// }
 
 // ====================================
 
-let num1 = 5;
-let num2 = 16;
-let num3 = 9;
+// let num1 = 5;
+// let num2 = 16;
+// let num3 = 9;
 
-let numPar = false;
+// let numPar = false;
 
-if ((num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0)) {
-    numPar = true;
+// if ((num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0)) {
+//     numPar = true;
+// };
+
+// console.log(numPar);
+
+// ====================================
+
+// 10 - Utilize if/else para escrever um código que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, o código deve calcular o lucro (ou seja, o valor de venda menos o custo do produto) da empresa ao vender mil produtos.
+
+// let custoProduto = 1;
+// let saleValue = 3;
+
+// if (custoProduto >= 0 && saleValue >= 0) {
+//     let totalCostOfProduct = custoProduto * 1.2;
+//     let totalProfit = (saleValue - totalCostOfProduct) * 1000;
+//     console.log(totalProfit);
+// } else {
+//     console.log('Error, os valores não podem ser negativos!');
+// }
+
+// ====================================
+
+let aliquotINSS;
+let aliquotIR;
+
+let grossSalary = 40000;
+
+if (grossSalary <= 1556.94) {
+    aliquotINSS = grossSalary * 0.08;
+} else if (grossSalary >= 1556.95 && grossSalary <= 2594.92) {
+    aliquotINSS = grossSalary * 0.09;
+} else if (grossSalary >= 2594.93 && grossSalary <= 5189.82) {
+    aliquotINSS = grossSalary * 0.11;
+} else if (grossSalary > 5189.82) {
+    aliquotINSS = 570.88;
 };
 
-console.log(numPar);
+let baseSalary = grossSalary - aliquotINSS;
+
+if (baseSalary <= 1903.98) {
+    aliquotIR = 0;
+} else if (baseSalary >= 1903.99 && baseSalary <= 2826.65) {
+    aliquotIR = baseSalary * 0.075 - 142.80;
+} else if (baseSalary >= 2826.66 && baseSalary <= 3751.05) {
+    aliquotIR = baseSalary * 0.15 - 354.80; 
+} else if (baseSalary >= 3751.06 && baseSalary <= 4664.68) {
+    aliquotIR = baseSalary * 0.225 - 636.13;
+} else {
+    aliquotIR = baseSalary * 0.275 - 869.36;
+}
+
+let liquidSalary = baseSalary - aliquotIR;
+
+console.log(`Salário Líquido é de: R$ ${liquidSalary}`);
+
