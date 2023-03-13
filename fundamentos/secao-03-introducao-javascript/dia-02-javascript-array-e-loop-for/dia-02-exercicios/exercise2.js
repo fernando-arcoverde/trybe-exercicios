@@ -46,3 +46,25 @@ if (oddNumber === 0) {
 } else {
   console.log(oddNumber);
 }
+
+let menorValor = numbers[0];
+
+for(let index = 1; index < numbers.length; index += 1) {
+  if (numbers[index] < menorValor) {
+    menorValor = numbers[index];
+  }
+}
+
+// console.log(menorValor);
+
+let numbers2 = [];
+
+for(let index = 1; index <= 25; index += 1) {
+  numbers2.push(index);
+}
+
+console.log(numbers2);
+
+for (let index = 0; index < numbers2.length; index += 1) {
+  console.log(numbers2[index] / 2);
+};
