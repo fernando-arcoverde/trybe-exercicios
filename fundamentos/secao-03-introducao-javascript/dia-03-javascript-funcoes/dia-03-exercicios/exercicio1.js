@@ -100,27 +100,29 @@ let sorvetes = ['Morango', 'Chocolate', 'Flocos'];
 
 function sorveteEscolhido(nome, sabor) {
 
-    let clienteValido = false;
-    let sorveteValido = false;
+    // let clienteValido = false;
+    // let sorveteValido = false;
 
-    for (let index = 0; index < clientesCadastrados.length; index += 1) {
-        if (clientesCadastrados[index] === nome) {
-            clienteValido = true;
-        }
-    }
+    // for (let index = 0; index < clientesCadastrados.length; index += 1) {
+    //     if (clientesCadastrados[index] === nome) {
+    //         clienteValido = true;
+    //     }
+    // }
 
-    for (let index = 0; index < sorvetes.length; index += 1) {
-        if (sorvetes[index] === sabor) {
-            sorveteValido = true;
-        }
-    }
+    // for (let index = 0; index < sorvetes.length; index += 1) {
+    //     if (sorvetes[index] === sabor) {
+    //         sorveteValido = true;
+    //     }
+    // }
 
-    if (clienteValido === true && sorveteValido === true) {
-        console.log(nome + ', pague seu sorvete de ' + sabor + ' no caixa.');
+    if (clientesCadastrados.includes(nome) && sorvetes.includes(sabor)) {
+        return nome + ', pague seu sorvete de ' + sabor + ' no caixa.';
     } else {
-        console.log('Cliente e/ou sorvete inválido!');
+        return 'Cliente e/ou sorvete inválido!';
     }
 }
 
-sorveteEscolhido('Fernando', 'Flocos');
-sorveteEscolhido('Ísis', 'Chocolate');
+console.log(sorveteEscolhido('Fernando', 'Flocos'));
+console.log(sorveteEscolhido('Ísis', 'Chocolate'));
+console.log(sorveteEscolhido('Diego', 'Morango'));
+console.log(sorveteEscolhido('Janayna', 'Doce de Leite'));
