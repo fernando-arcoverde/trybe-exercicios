@@ -53,7 +53,7 @@ console.log(divideSaldoTrybeBank(4));
 
 let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 
-function cumprimentaCliente (cliente) {
+function cumprimentaCliente(cliente) {
     return `Olá ${cliente}, está é sua conta TrybeBank!`;
 }
 
@@ -63,7 +63,7 @@ console.log(cumprimentaCliente(clientesTrybeBank))
 
 let statusLogin = 'deslogado';
 
-function logarDeslogar () {
+function logarDeslogar() {
     if (statusLogin === 'deslogado') {
         statusLogin = 'logado';
     } else {
@@ -77,7 +77,7 @@ console.log(`O usuário está ${statusLogin} no sistema TrybeBank`);
 
 // =======================
 
-function sacar (valor, saldo) {
+function sacar(valor, saldo) {
     if (valor >= 1 && saldo >= 0) {
         if (valor <= saldo) {
             return `Saque realizado com sucesso! Novo Saldo: R$ ${saldo - valor},00.`;
@@ -95,3 +95,32 @@ console.log(sacar(0.5, 0));
 
 // ===============================
 
+let clientesCadastrados = ['Marta', 'Paulo', 'Alexandre', 'Ester', 'Fernando', 'Ísis', 'Diego', 'Janayna'];
+let sorvetes = ['Morango', 'Chocolate', 'Flocos'];
+
+function sorveteEscolhido(nome, sabor) {
+
+    let clienteValido = false;
+    let sorveteValido = false;
+
+    for (let index = 0; index < clientesCadastrados.length; index += 1) {
+        if (clientesCadastrados[index] === nome) {
+            clienteValido = true;
+        }
+    }
+
+    for (let index = 0; index < sorvetes.length; index += 1) {
+        if (sorvetes[index] === sabor) {
+            sorveteValido = true;
+        }
+    }
+
+    if (clienteValido === true && sorveteValido === true) {
+        console.log(nome + ', pague seu sorvete de ' + sabor + ' no caixa.');
+    } else {
+        console.log('Cliente e/ou sorvete inválido!');
+    }
+}
+
+sorveteEscolhido('Fernando', 'Flocos');
+sorveteEscolhido('Ísis', 'Chocolate');
