@@ -17,3 +17,19 @@ let lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
+
+
+// Função criar novo turno.
+  function newTurn (obj, key, value) {
+    obj[key] = value;
+  }
+
+  newTurn(lesson2, 'turno', 'noite');
+  console.log(lesson2);
+
+  // Função listar chaves dos objetos.
+  function objectKeys (obj) {
+    return Object.keys(obj);
+  }
+
+  console.log(objectKeys(lesson1));
