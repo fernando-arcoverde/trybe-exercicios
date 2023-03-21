@@ -54,7 +54,7 @@ let leitor = {
   console.log(leitor.sobrenome);
   console.log(leitor.livrosFavoritos[0].titulo);
 
-  console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome} se chama ${leitor.livrosFavoritos[0].titulo}.`);
+  console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome} se chama '${leitor.livrosFavoritos[0].titulo}.'`);
 
   leitor.livrosFavoritos.push({
     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
@@ -63,3 +63,5 @@ let leitor = {
   })
 
   console.log(leitor.livrosFavoritos);
+
+  console.log(`${leitor.nome} tem ${leitor.livrosFavoritos.length} livros favoritos.`);
