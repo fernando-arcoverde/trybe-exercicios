@@ -33,3 +33,9 @@ let lesson1 = {
   }
 
   console.log(objectKeys(lesson1));
+
+  function objectLength(obj) {
+    return Object.keys(obj).length;
+  }
+
+  console.log(objectLength(lesson3));
