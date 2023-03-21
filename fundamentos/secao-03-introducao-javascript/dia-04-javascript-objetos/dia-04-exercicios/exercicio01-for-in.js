@@ -4,16 +4,34 @@ let info = {
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
 
-  console.log(`Bem-vinda, ${info.personagem}!`);
+  let info2 = {
+    personagem: 'Tio Patinhas',
+    origem: 'Christmas on Bear Mountain, Dell’s Four Color Comics #178',
+    nota: 'O último MacPatinhas',
+    recorrente: 'Sim',
+  };
 
   info.recorrente = 'Sim';
 
-  console.log(info);
-
   for (let index in info) {
-    console.log(index);
+    if (index === 'recorrente' && info[index] === 'Sim' && info2[index] === 'Sim') {
+        console.log('Ambos recorrentes');
+    } else {
+        console.log(info[index] + ' e ' + info2[index]);
+    }
   }
 
-  for (let index in info) {
-    console.log(info[index]);
-  }
+//   console.log(`Bem-vinda, ${info.personagem}!`);
+
+//   info.recorrente = 'Sim';
+
+//   console.log(info);
+
+//   for (let index in info) {
+//     console.log(index);
+//   }
+
+//   for (let index in info) {
+//     console.log(info[index]);
+//   }
+
