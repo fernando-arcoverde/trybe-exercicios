@@ -57,3 +57,17 @@ let lesson1 = {
  });
 
  console.log(allLessons);
+
+ // Crie uma função que retorne o número total de estudantes em todas as aulas.
+
+ function getNumberOfStudents(obj) {
+    let total = 0; // Vai receber o total de estudantes
+    let keys = Object.keys(obj); // Recebe as chaves do objeto
+
+    for (let index = 0; index < keys.length; index += 1) {
+        total += obj[keys[index]].numeroEstudantes;
+    }
+    return total;
+ }
+
+ console.log(getNumberOfStudents(allLessons));
