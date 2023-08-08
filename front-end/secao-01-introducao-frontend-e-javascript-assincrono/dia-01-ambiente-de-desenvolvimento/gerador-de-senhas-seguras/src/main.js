@@ -14,4 +14,5 @@ passwodButtonElement.addEventListener('click', () => {
 [] Observações:
 1- Adicionado a chave "type": "module" no package.json para roda o nanoid no node através do comando no terminal node src/main.js .
 2- Utilizado o comando npx vite ou vite --open.
+3- Vite instalado com o comando npm install vite e adicionado uma chave no package.json "dev": "vite --open"
 */
