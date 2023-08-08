@@ -4,7 +4,8 @@ const passwodButtonElement = document.getElementById('passwordBtn');
 const displayPasswordElement = document.querySelector("h2");
 
 passwodButtonElement.addEventListener('click', () => {
-    console.log('Testando Click');
+    const randomPassword = nanoid();
+    displayPasswordElement.innerHTML = randomPassword;
 });
 
 // const randomPassword = nanoid();
