@@ -1,10 +1,10 @@
-import { nanoid } from 'nanoid'
-import "./style.css";
+import { nanoid } from 'nanoid';
+import './style.css';
 
 const passwordBtEl = document.querySelector('button');
 const displayPassworEl = document.querySelector('h2');
 
 passwordBtEl.addEventListener('click', () => {
-    const randomPassword = nanoid()
+    const randomPassword = nanoid();
     displayPassworEl.innerHTML = randomPassword;
 });
