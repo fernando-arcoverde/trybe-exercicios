@@ -4,11 +4,9 @@ import Header from './Header'
 function App() {
   return (
     <>
-      <div>
-        <Header />
-      </div>
+      <Header />
     </>
-  )
+  );
 }
 
 export default App
