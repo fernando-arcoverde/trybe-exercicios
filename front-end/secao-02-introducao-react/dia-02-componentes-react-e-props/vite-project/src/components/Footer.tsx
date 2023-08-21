@@ -1,7 +1,7 @@
 function Footer() {
   const person = {
-    name: 'John',
-    lastname: 'John',
+    name: 'Fernando',
+    lastname: 'Arcoverde',
   };
   return (
     <footer>
