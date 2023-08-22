@@ -10,7 +10,9 @@ type BookProps = {
 function Book({ book }: BookProps) {
   return (
     <li>
+      <span>{book.isRead ? '✅ ' : '⌛ '}</span>
       <span>{`${book.title} (${book.pages} Páginas)`}</span>
+      {book.isFavorite && <span> 💚</span>}
     </li>
   );
 }
