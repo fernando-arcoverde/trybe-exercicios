@@ -1,9 +1,20 @@
+import { ForecastType } from '../data/forecast';
 import './Card.css';
 
-function Card() {
+type CardProps = {
+  data: ForecastType
+};
+
+function Card(props:CardProps) {
+  const { data } = props;
+  const { weekday, date, image, temp, weather } = data;
   return (
     <div className="Card">
-      <h3>Card</h3>
+      <h3>{weekday}</h3>
+      <p>{date}</p>
+      <img src={ image } alt="" />
+      <p>{temp}</p>
+      <p>{weather}</p>
     </div>
   );
 }
