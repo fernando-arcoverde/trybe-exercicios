@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Book from './components/Book';
 import './App.css';
+import PastResults from './components/PastResults';
 
 const booksList = [
   {
@@ -38,7 +39,7 @@ const booksList = [
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
       <p>Meus Livros:</p>
       <ul>
@@ -49,8 +50,9 @@ function App() {
           />
         ))}
       </ul>
+      <PastResults />
       <Footer />
-    </>
+    </div>
   );
 }
 
