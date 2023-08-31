@@ -22,8 +22,7 @@ function LoginForm() {
 
   function validateLogin() {
     const regex = /\S+@\S+\.\S+/i;
-    if (regex.test(email) && password.length > 5) return true;
-    return false;
+    return regex.test(email) && password.length > 5;
   }
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
