@@ -1,1 +1,4 @@
 Exercícios do dia 1.
+Procurar no Docker Hub uma imagem do Debian e baixar sem criar um container a ver stable-slim.
+Rodar um container no modo interativo.
+Rodar um comando no terminal do container criado.
